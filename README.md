@@ -148,7 +148,7 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
 
 ```
 ### CSS customisation
-If you want to change the CSS use "public/css/style.css".
+If you want to change the CSS use "public/css/custom.css".
 
 
 ### Downloads
