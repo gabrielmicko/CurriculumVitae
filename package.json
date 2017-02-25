@@ -24,8 +24,8 @@
     "webpack": "^1.14.0"
   },
   "scripts": {
-    "dev": "webpack -w",
-    "build": "webpack"
+    "dev": "./node_modules/.bin/webpack -w",
+    "build": "./node_modules/.bin/webpack"
   },
   "author": "Gabriel Micko",
   "license": "ISC"
