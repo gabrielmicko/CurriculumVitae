@@ -1,5 +1,7 @@
 node_modules
 public/img/cv
+public/downloads
+public/js/bundle.json
 config/profile.json
 npm-debug.log
 psd

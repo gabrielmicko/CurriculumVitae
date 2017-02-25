@@ -5,6 +5,8 @@ import App from 'layout/app';
 import { IndexAction, ResumeAction, AboutAction, ContactAction, DownloadAction, NoMatch } from 'controller/controller'
 import DocumentTitle from 'react-document-title';
 import Profile from './config/profile.json';
+import CSS from '../public/css/main.css';
+
 
 ReactDOM.render((
     <DocumentTitle title={Profile.document_title}>
