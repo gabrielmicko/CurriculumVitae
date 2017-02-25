@@ -16,7 +16,7 @@ export default React.createClass({
 
               <p><strong>Mobile </strong><a href={'tel:' + Profile.contact.tel}>{Profile.contact.tel}</a></p>
               <p><strong>Email </strong><a href={'mailto:' + Profile.contact.email}>{Profile.contact.email}</a></p>
-              <p>Looking forward to answering your emails and phone calls.</p>
+              <p>{Profile.contact.text}</p>
               <ul className="clearfix">
                   <li className="bg-red"><a href={Profile.contact.linkfb}><i className="fa fa-facebook"></i></a></li>
                   <li className="bg-red"><a href={Profile.contact.linktwitter}><i className="fa fa-twitter"></i></a></li>

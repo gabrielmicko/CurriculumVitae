@@ -66,7 +66,8 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
     "linktwitter": "https://twitter.com/TwitterHandle",
     "linkin": "https://www.linkedin.com/in/LinkedinHandle",
     "linkskype": "Skype Handle",
-    "c": "© WebsiteName"
+    "c": "© WebsiteName",
+    "text": "Looking forward to answer your emails and phone calls."
   },
   "resume": {
     "title": "Resume",
