@@ -65,6 +65,7 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
     "linkfb": "https://facebook.com/FacebookHandle",
     "linktwitter": "https://twitter.com/TwitterHandle",
     "linkin": "https://www.linkedin.com/in/LinkedinHandle",
+    "linkgithub": "https://github.com/Github",
     "linkskype": "Skype Handle",
     "c": "© WebsiteName",
     "text": "Looking forward to answer your emails and phone calls."

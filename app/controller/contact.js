@@ -21,6 +21,7 @@ export default React.createClass({
                   <li className="bg-red"><a href={Profile.contact.linkfb}><i className="fa fa-facebook"></i></a></li>
                   <li className="bg-red"><a href={Profile.contact.linktwitter}><i className="fa fa-twitter"></i></a></li>
                   <li className="bg-red"><a href={Profile.contact.linkin}><i className="fa fa-linkedin"></i></a></li>
+                  <li className="bg-red"><a href={Profile.contact.linkgithub}><i className="fa fa-github"></i></a></li>
                   <li className="bg-red"><a href={'skype:' + Profile.contact.linkskype}><i className="fa fa-skype"></i></a></li>
               </ul>
               </div>
