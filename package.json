@@ -1,7 +1,7 @@
 {
-  "name": "edivaniadias.com",
+  "name": "CurriculumVitae",
   "version": "1.0.0",
-  "description": "Please note:",
+  "description": "This project will help you to create your personal website very quickly. If you want to upload the content you just need to edit the config file based on the example file.",
   "main": "server.js",
   "dependencies": {
     "express": "^4.14.0",
