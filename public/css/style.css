@@ -1,0 +1,546 @@
+body {
+    background-color: #EAE5E5;
+    font-family: 'Raleway Webfont', sans-serif;
+    color: #4D4D4D;
+}
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.container {
+    flex: 1;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #4D4D4D;
+}
+h1 {
+    font-size: 20px;
+}
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+}
+p {
+    font-size: 14px;
+}
+.normal {
+    font-weight: 300;
+}
+.bold {
+    font-weight: 600;
+}
+header {
+    padding: 50px 50px;
+}
+header::after {
+    display: block;
+    content: '';
+    clear: both;
+    float: none;
+}
+header .intro, header nav {
+    float: left;
+}
+header .intro h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+}
+header .intro h2 {
+    margin: 5px 0;
+}
+header nav {
+    margin-left: 30px;
+    margin-top: 58px;
+}
+header nav ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: gray;
+    float: left;
+    padding: 0 15px;
+    font-weight: 500;
+}
+header nav ul li:hover a, header nav ul li.active a {
+    color: #61D0D4;
+}
+header span {}
+footer {
+    padding: 50px 0;
+    color: #fff;
+    background-color: #E83556;
+}
+.clearfix:after {
+    display: block;
+    content: '';
+    float: none;
+    clear: both;
+}
+footer .lollipop {
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: #E83556;
+    background-color: #61D0D4;
+    text-align: center;
+    box-sizing: border-box;
+}
+footer .call-me .lollipop {
+    font-size: 34px;
+    padding-top: 3px;
+}
+footer .contact .lollipop {
+    font-size: 24px;
+    padding-top: 8px;
+}
+footer .follow-me .lollipop {
+    font-size: 22px;
+    padding-top: 9px;
+    padding-left: 6px;
+}
+footer .copyright .lollipop {
+    font-size: 28px;
+    padding-top: 9px;
+}
+footer .text {
+    float: left;
+    padding: 0 15px;
+}
+footer p {
+    font-size: 12px;
+    margin: 0;
+}
+footer p a {
+    color: #fff;
+}
+footer strong {
+    display: block;
+    margin: 0;
+    font-size: 13px
+}
+footer ul {
+    margin-top: 5px;
+}
+footer ul li {
+    list-style-type: none;
+    float: left;
+}
+footer ul li i.fa {
+    color: #fff;
+    font-size: 20px;
+    padding-right: 10px;
+}
+footer i {
+    color: #E83556;
+}
+.grid-container {
+    max-width: 980px;
+}
+.hide {
+    display: none;
+}
+.hidden {
+    visibility: hidden;
+}
+input {}
+.page-index {
+    margin-bottom: 30px;
+}
+.page-index h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 80px;
+}
+.page-index h2 {
+    font-size: 46px;
+    font-weight: normal;
+    margin: 15px 0 0;
+    line-height: 46px;
+}
+.page-index .myimage {
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/*.page-index .myimage:hover {
+    background-image: url('/img/edivaniadias.png');
+}*/
+
+.page-index ul {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.page-index ul.lollipop li a {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    font-size: 13px;
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding-top: 56px;
+    box-sizing: border-box;
+}
+.page-index ul.lollipop li {
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+}
+.page-index p {
+    font-size: 13px;
+}
+.bg-red {
+    background-color: #E83556;
+    transition: background-color ease 1s;
+}
+.bg-red-hover:hover {
+    background-color: #9b2439;
+}
+.bg-cian {
+    background-color: #61D0D4;
+    transition: background-color ease 1s;
+}
+.bg-cian-hover:hover {
+    background-color: #418b8d;
+}
+.bg-yellow {
+    background-color: #D1C926;
+    transition: background-color ease 1s;
+}
+.bg-yellow-hover:hover {
+    background-color: #8b8619;
+}
+.page-resume {
+    margin: 0 50px 30px;
+}
+.page-resume .title {
+    font-size: 80px;
+    margin: 0 0 30px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.page-resume .exp-holder {
+    padding: 35px 0;
+    border-top: 1px solid #8b8b8b;
+}
+.page-resume .exp-holder .lollipop {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 17px;
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+.page-resume .exp-holder article h3 {
+    margin: 31px 0 2px 0;
+    font-size: 17px;
+    font-weight: normal;
+    font-weight: 500;
+}
+.page-resume .exp-holder article time {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+.page-resume .exp-holder article p {
+    font-size: 13px;
+    margin: 13px 0 34px 0
+}
+.page-resume .details {
+    box-sizing: border-box;
+    padding-left: 60px;
+}
+.page-resume .details .lollipop {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+}
+.page-resume .details .lollipop i {
+    font-size: 22px;
+    color: #fff;
+    padding-top: 12px;
+}
+.page-resume .details .detail {
+    margin-top: 0;
+}
+.page-resume .details .detail+.detail {
+    margin-top: 40px;
+}
+.page-resume .details .skill {
+    font-size: 17px;
+    font-weight: 500;
+    border-bottom: 1px solid #8b8b8b;
+    margin: 12px 0 10px 0;
+    padding-bottom: 10px;
+}
+.page-resume .details ul {}
+.page-resume .details ul li {
+    list-style-type: none;
+    display: block;
+    font-size: 13px;
+    line-height: 1.2;
+}
+.page-projects {
+    margin: 0 50px 30px;
+}
+.page-projects .title {
+    font-size: 80px;
+    margin: 0 0 30px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.page-projects article {
+    border-top: 1px solid #8b8b8b;
+    border-bottom: 1px solid #8b8b8b;
+    padding: 40px 0;
+}
+.page-projects article+article {
+    border-top: 0;
+}
+.page-projects article .lollipop {
+    box-sizing: border-box;
+    width: 95px;
+    height: 95px;
+    padding-top: 40px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 0 20px;
+}
+.page-projects article h2 {
+    border-top: 1px solid #8b8b8b;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 17px 0 10px;
+}
+.page-projects article p {}
+.page-projects .cta,
+.page-resume .cta {
+    padding: 20px 0;
+}
+.page-projects .cta .lollipop,
+.page-resume .cta .lollipop {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    padding-top: 22px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 13px;
+    float: right;
+    cursor: pointer;
+}
+.page-projects .cta a,
+.page-resume .cta a{
+    font-size: 17px;
+    padding: 20px 0;
+    display: block;
+}
+
+.page-resume .cta {
+  border-top:1px solid #8b8b8b;
+}
+
+.page-contact {
+    margin: 0 50px 30px;
+}
+.page-contact h1 {
+    min-width: 880px;
+    font-size: 80px;
+    margin: 0 0 30px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.page-contact p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.page-contact ul {
+    display: block;
+    margin-top: 25px;
+}
+.page-contact ul li {
+    list-style-type: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+    display: block;
+    margin: 0 5px 0 0;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+.page-contact ul li+li {
+    margin: 0 5px;
+}
+.page-contact ul li i {
+    color: #fff;
+    font-size: 24px;
+}
+.page-contact ul li a {
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+    header {
+        padding: 30px 20px 10px;
+    }
+    header .intro {
+        float: none;
+    }
+    header nav {
+        float: none;
+        margin: 18px 0;
+    }
+    header .intro h1 {
+        font-size: 30px;
+    }
+    header .intro h2 {
+        font-size: 16px;
+    }
+    header nav ul li {
+        font-size: 13px;
+        padding: 0 5px 10px 0;
+    }
+    header nav ul li+li {
+        padding: 0 5px 10px;
+    }
+    footer {
+        padding: 25px 20px;
+    }
+    footer .grid-25 {
+        margin-top: 15px;
+    }
+    .page-index {
+        padding: 0 10px 0px;
+    }
+    .page-index .myimage {
+        width: 200px;
+        height: 200px;
+    }
+    .page-index h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+    .page-index h2 {
+        font-size: 26px;
+        margin-top: 10px;
+        line-height: 26px;
+    }
+    .page-index ul.lollipop li {
+        margin-right: 5px;
+    }
+    .page-index ul.lollipop li a {
+        width: 75px;
+        height: 75px;
+        font-size: 11px;
+        padding-top: 31px;
+    }
+    .page-resume {
+        margin: 0 20px 30px;
+    }
+    .page-resume .title {
+        font-size: 40px;
+        margin: 0 0 5px 0;
+    }
+    .page-resume .exp-holder {
+        padding: 15px 0;
+    }
+    .page-resume .exp-holder .lollipop {
+        width: 75px;
+        height: 75px;
+        font-size: 11px;
+        padding-top: 26px;
+        padding-left: 7px;
+    }
+    .page-resume .exp-holder article {
+        margin: 0 -10px;
+    }
+    .page-resume .exp-holder article h3 {
+        margin-top: 13px;
+    }
+    .page-resume .exp-holder article p {
+        margin: 10px 0;
+    }
+    .page-resume .details {
+        padding: 0;
+    }
+    .page-resume .details .detail+.detail {
+        margin-top: 20px;
+    }
+    .page-projects {
+        margin: 0 20px 30px;
+    }
+    .page-projects .title {
+        font-size: 40px;
+        margin: 0 0 5px 0;
+    }
+    .rsc-container {
+        margin: 0;
+        padding: 0;
+        max-width: 260px;
+    }
+    .rsc-slider-item-img {
+        min-height: 220px;
+    }
+    .page-projects article {
+        padding: 16px 0;
+    }
+    .page-projects article .lollipop {
+        width: 75px;
+        height: 75px;
+        margin: 11px 0 16px;
+        font-size: 11px;
+        padding-top: 30px;
+    }
+    .page-projects article .grid-50 {
+        padding: 0;
+    }
+    .page-projects article h2 {
+        padding-bottom: 0;
+    }
+    .page-projects article p {
+        padding-top: 10px 0;
+    }
+    .page-projects .cta {
+        padding: 0;
+    }
+    .page-projects .cta .lollipop {
+        float: left;
+    }
+    .page-contact {
+        margin: 0 20px 30px;
+    }
+    .page-contact h1 {
+        min-width: 0;
+        font-size: 40px;
+    }
+    .page-contact p {
+        font-size: 16px;
+    }
+    .container {
+        margin: 0;
+    }
+}

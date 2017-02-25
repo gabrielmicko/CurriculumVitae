@@ -1,0 +1,5 @@
+node_modules
+public/img/cv
+config/profile.json
+npm-debug.log
+psd
