@@ -30,7 +30,13 @@ export default React.createClass({
                                   {
                                     prof.paragraphs.map((p, k) => {
                                       return (
-                                        <p key={k}>{p}</p>
+                                        <p key={k} dangerouslySetInnerHTML={
+                                          function(){
+                                            return {
+                                              '__html': p
+                                            }
+                                          }()
+                                        }></p>
                                       );
                                     })
                                   }
