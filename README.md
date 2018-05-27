@@ -171,10 +171,5 @@ npm run dev - for webpack to create the bundle on any change
 ```
 Open http://localhost:3000 too see the website.
 
-### Screenshot
-![alt tag](http://i.imgur.com/CKEQvnq.png)
-
-
-
 ### Version
 1.0.0
