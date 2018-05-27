@@ -172,7 +172,7 @@ npm run dev - for webpack to create the bundle on any change
 Open http://localhost:3000 too see the website.
 
 ### Screenshot
-![alt tag](https://s8.postimg.org/vjtin0vo5/cv_example.jpg)
+![alt tag](http://i.imgur.com/CKEQvnq.png)
 
 
 
