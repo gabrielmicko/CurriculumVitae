@@ -14,12 +14,13 @@ export default React.createClass({
             <h1 className="title">{Profile.projects.title}</h1>
             {
               Profile.projects.projects.map((p, k) => {
+                const hasImage = (p.images) ? true : false;
                 return (
                   <article key={k} className="grid-100 grid-parent">
-                      <div className="grid-50 grid-parent">
+                      {hasImage && <div className="grid-50 grid-parent">
                         <Slider images={p.images} isInfinite={true} delay={3000} visibleItems={1}/>
-                      </div>
-                      <div className="grid-50">
+                      </div>}
+                      <div className={hasImage ? 'grid-50' : 'grid-100'}>
                           <div className="lollipop bg-cian">{p.title}</div>
                           <h2>{p.subtitle}</h2>
                           <p dangerouslySetInnerHTML={
