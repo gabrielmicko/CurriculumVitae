@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import Profile from '../config/profile.json';
 
 export default React.createClass({
-  componentDidMount() {},
   render: function() {
     return (
       <div className="page-contact grid-container grid-parent">

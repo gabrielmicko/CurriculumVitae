@@ -15,7 +15,7 @@ export default React.createClass({
     if (prof.location) {
       title.push(`${prof.location}`);
     }
-    return title.join(', ');
+    return title.join(' • ');
   },
   render: function() {
     return (
