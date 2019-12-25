@@ -28,6 +28,10 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
       "title": "Resume"
     },
     {
+      "key": "/education",
+      "title": "Education"
+    },
+    {
       "key": "/about",
       "title": "About me"
     },
@@ -75,12 +79,11 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
   },
   "resume": {
     "title": "Resume",
-    "callToActionLink": "/about",
+    "callToActionLink": "/education",
     "callToAction": "To see more about me click here >>",
-    "callToActionLollipop": "About me",
+    "callToActionLollipop": "Education",
     "professional": [
       {
-        "title": "Title",
         "company": "Company Inc.",
         "logo": "/img/all/company.svg",
         "jobTitle": "Position",
@@ -135,6 +138,24 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
       {
         "title": "Title",
         "link": "http://DownloadLink.com"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "callToActionLink": "/about",
+    "callToAction": "To see more about me click here >>",
+    "callToActionLollipop": "About me",
+    "list": [
+      {
+        "school": "Perfect University",
+        "degree": "University degree",
+        "fieldOfStudy": "Software enginner",
+        "startDate": "2013",
+        "endDate": "2015",
+        "logo": "/img/all/company.svg",
+        "paragraphs": ["Text comes here"],
+        "location": "Budapest, Hungary"
       }
     ]
   }
