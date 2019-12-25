@@ -2,9 +2,9 @@
   "name": "Your name",
   "role": "Current job title",
   "welcome_first": "Welcome,",
-  "welcome_second":"This is my website",
-  "profile_picture":"/img/profile.jpg",
-  "document_title":"Document title",
+  "welcome_second": "This is my website",
+  "profile_picture": "/img/profile.jpg",
+  "document_title": "Document title",
   "nav": [
     {
       "key": "/",
@@ -28,24 +28,24 @@
     }
   ],
   "index": {
-      "lollipops": [
-        {
-          "url": "/resume",
-          "text": "My Resume",
-          "class": "bg-red bg-red-hover"
-        },
-        {
-          "url": "/resume",
-          "text": "My Work",
-          "class": "bg-cian bg-cian-hover"
-        },
-        {
-          "url": "/resume",
-          "text": "My Skills",
-          "class": "bg-yellow bg-yellow-hover"
-        }
-      ],
-      "short_bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. "
+    "lollipops": [
+      {
+        "url": "/resume",
+        "text": "My Resume",
+        "class": "bg-red bg-red-hover"
+      },
+      {
+        "url": "/resume",
+        "text": "My Work",
+        "class": "bg-cian bg-cian-hover"
+      },
+      {
+        "url": "/resume",
+        "text": "My Skills",
+        "class": "bg-yellow bg-yellow-hover"
+      }
+    ],
+    "short_bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. "
   },
   "contact": {
     "tel": "Your tel number",
@@ -68,8 +68,13 @@
     "professional": [
       {
         "title": "Title",
-        "position": "Position",
-        "date": "From - To",
+        "company": "Company Inc.",
+        "logo": "/img/all/company.svg",
+        "jobTitle": "Position",
+        "startDate": "From",
+        "endDate": "To",
+        "duration": "6+ months",
+        "location": "NYC",
         "paragraphs": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. ",
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. "
@@ -77,7 +82,6 @@
       }
     ],
     "skills": [
-
       {
         "title": "I speak",
         "icon": "fa-language",
@@ -88,56 +92,43 @@
       {
         "title": "I am",
         "icon": "fa-male",
-        "list": [
-          "communicative",
-          "dedicated"
-        ]
+        "list": ["communicative", "dedicated"]
       },
       {
         "title": "I code",
         "icon": "fa-code",
-        "list": [
-          "JavaScript",
-          "HTML"
-        ]
+        "list": ["JavaScript", "HTML"]
       },
       {
         "title": "I love",
         "icon": "fa-heart",
-        "list": [
-          "challenges",
-          "learning",
-          "teaching"
-        ]
+        "list": ["challenges", "learning", "teaching"]
       }
     ]
   },
   "projects": {
-      "title": "About me",
-      "callToActionLink": "/contact",
-      "callToAction": "To see more or discuss possible work let's talk >>",
-      "callToActionLollipop": "Let's talk",
-      "projects": [
-        {
-          "title": "Title",
-          "subtitle": "Lorem ipsum dolor sit amet",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. ",
-          "images": [
-            "/img/all/volunteer.png",
-            "/img/all/mozilla.png"
-          ]
-        },
-        {
-          "title": "Title",
-          "subtitle": "Lorem ipsum dolor sit amet",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. "
-        },
-        {
-          "title": "Title",
-          "subtitle": "Lorem ipsum dolor sit amet",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. "
-        }
-      ]
+    "title": "About me",
+    "callToActionLink": "/contact",
+    "callToAction": "To see more or discuss possible work let's talk >>",
+    "callToActionLollipop": "Let's talk",
+    "projects": [
+      {
+        "title": "Title",
+        "subtitle": "Lorem ipsum dolor sit amet",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. ",
+        "images": ["/img/all/volunteer.png", "/img/all/mozilla.png"]
+      },
+      {
+        "title": "Title",
+        "subtitle": "Lorem ipsum dolor sit amet",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. "
+      },
+      {
+        "title": "Title",
+        "subtitle": "Lorem ipsum dolor sit amet",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt nec purus sit amet blandit. Phasellus quis neque suscipit, mollis risus eu, fermentum massa. Integer a tempor velit, eget maximus elit. Aenean porttitor lacus luctus ultricies lacinia. Mauris in ultricies nulla, nec fringilla nunc. Aliquam dignissim imperdiet porta. Aliquam risus mi, gravida non porttitor nec, efficitur eget justo. Vestibulum vel sagittis urna. In feugiat nibh ac felis bibendum tincidunt. Nunc sed justo magna. Proin augue ex, tempor sit amet pellentesque eu, congue a dui. Aliquam eget eros sed metus rhoncus tempor. Praesent iaculis sodales nisi, quis consectetur odio elementum nec. Sed eget facilisis leo. Donec et est pellentesque, bibendum elit nec, rhoncus tortor. Praesent sagittis ante quis est iaculis, at finibus justo porta. "
+      }
+    ]
   },
   "download": {
     "downloads": [
