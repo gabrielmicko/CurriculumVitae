@@ -265,9 +265,16 @@ input {
   text-transform: uppercase;
   border-bottom: 1px solid #8b8b8b;
 }
+
 .page-resume .exp-holder {
   padding: 35px 0;
+  border-bottom: 1px solid #8b8b8b;
 }
+
+.page-resume .exp-holder:last-child {
+  border-bottom: 0;
+}
+
 .page-resume .exp-holder .lollipop {
   width: 125px;
   height: 125px;
