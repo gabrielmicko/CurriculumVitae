@@ -40,12 +40,7 @@ p {
 }
 header {
   padding: 50px 50px;
-}
-header::after {
-  display: block;
-  content: '';
-  clear: both;
-  float: none;
+  display: flex;
 }
 header .intro,
 header nav {
@@ -69,14 +64,12 @@ header nav ul li {
   font-size: 14px;
   color: gray;
   float: left;
-  padding: 0 15px;
+  padding: 0 10px;
   font-weight: 500;
 }
 header nav ul li:hover a,
 header nav ul li.active a {
   color: #61d0d4;
-}
-header span {
 }
 footer {
   padding: 50px 0;
