@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router';
 import Profile from '../config/profile.json';
+import { getSocialIcon } from '../partial/utils';
 
 export default React.createClass({
   render: function() {
@@ -19,41 +19,15 @@ export default React.createClass({
           </p>
           <p>{Profile.contact.text}</p>
           <ul className="clearfix">
-            {Profile.contact.linkfb && (
-              <li className="bg-red">
-                <a href={Profile.contact.linkfb}>
-                  <i className="fa fa-facebook"></i>
-                </a>
-              </li>
-            )}
-            {Profile.contact.linktwitter && (
-              <li className="bg-red">
-                <a href={Profile.contact.linktwitter}>
-                  <i className="fa fa-twitter"></i>
-                </a>
-              </li>
-            )}
-            {Profile.contact.linkin && (
-              <li className="bg-red">
-                <a href={Profile.contact.linkin}>
-                  <i className="fa fa-linkedin"></i>
-                </a>
-              </li>
-            )}
-            {Profile.contact.linkgithub && (
-              <li className="bg-red">
-                <a href={Profile.contact.linkgithub}>
-                  <i className="fa fa-github"></i>
-                </a>
-              </li>
-            )}
-            {Profile.contact.linkskype && (
-              <li className="bg-red">
-                <a href={'skype:' + Profile.contact.linkskype}>
-                  <i className="fa fa-skype"></i>
-                </a>
-              </li>
-            )}
+            {Profile.contact.socialLinks.map(({ url, title }, key) => {
+              return (
+                <li key={key} className="bg-red">
+                  <a href={url}>
+                    <i className={`fa fa-${getSocialIcon(title)}`}></i>
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

@@ -69,11 +69,28 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
     "link": "//My Website",
     "website": "http://YourDomain.com",
     "email": "My E-mail",
-    "linkfb": "https://facebook.com/FacebookHandle",
-    "linktwitter": "https://twitter.com/TwitterHandle",
-    "linkin": "https://www.linkedin.com/in/LinkedinHandle",
-    "linkgithub": "https://github.com/Github",
-    "linkskype": "Skype Handle",
+    "socialLinks": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/LinkedinHandle"
+      },
+      {
+        "title": "GitHub",
+        "url": "https://github.com/Github"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/TwitterHandle"
+      },
+      {
+        "title": "Facebook",
+        "url": "https://facebook.com/FacebookHandle"
+      },
+      {
+        "title": "Skype",
+        "url": "skype:Skype Handle"
+      }
+    ],
     "c": "© WebsiteName",
     "text": "Looking forward to answer your emails and phone calls."
   },
