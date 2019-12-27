@@ -35,6 +35,14 @@ export default React.createClass({
               };
             })()}
           />
+          <div className="important">
+            <h3>Most important things about me:</h3>
+            <ul>
+              {Profile.index.mostImportantThings.map((t, key) => {
+                return <li key={key}>{t}</li>;
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     );

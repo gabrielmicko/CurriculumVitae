@@ -62,7 +62,8 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
         "class": "bg-yellow bg-yellow-hover"
       }
     ],
-    "short_bio": "Short bio."
+    "short_bio": "Short bio.",
+    "mostImportantThings": ["A", "B", "C"]
   },
   "contact": {
     "tel": "Your tel number",
