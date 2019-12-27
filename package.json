@@ -10,7 +10,10 @@
     "react-document-title": "^2.0.2",
     "react-dom": "^15.4.0",
     "react-router": "^3.0.0",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "commander": "^2.11.0",
+    "html-pdf": "^2.2.0",
+    "mime": "^2.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
@@ -25,7 +28,8 @@
   },
   "scripts": {
     "dev": "./node_modules/.bin/webpack -w",
-    "build": "./node_modules/.bin/webpack"
+    "build": "./node_modules/.bin/webpack",
+    "pdf": "pdf/cv.js pdf/index.js"
   },
   "author": "Gabriel Micko",
   "license": "ISC"

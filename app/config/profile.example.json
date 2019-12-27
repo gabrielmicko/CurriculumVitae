@@ -5,6 +5,9 @@
   "welcome_second": "This is my website",
   "profile_picture": "/img/profile.jpg",
   "document_title": "Document title",
+  "pdf": {
+    "filename": "YourName_CV"
+  },
   "nav": [
     {
       "key": "/",

@@ -1,6 +1,6 @@
-# Personal website template engine
+# Personal website template engine & pdf generator
 
-This project will help you to create your personal website very quickly. If you want to upload the content you just need to edit the config file based on the example file.
+This project will help you to create your personal website very quickly. If you want to upload the content you just need to edit the config file based on the example file. It also can generate for you a PDF file based on the data.
 
 ### Technology
 
@@ -18,6 +18,9 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
   "welcome_second": "This is my website",
   "profile_picture": "/img/profile.jpg",
   "document_title": "Document title",
+  "pdf": {
+    "filename": "YourName_CV"
+  },
   "nav": [
     {
       "key": "/",
@@ -210,6 +213,16 @@ npm install
 npm run build
 npm start
 ```
+
+### Generating PDF from the data
+
+```sh
+npm run pdf
+```
+
+### PDF generation
+
+PDF generation uses customized `andor-cv`. (Check out andor-cv here)[https://github.com/andormade/andor-cv]
 
 ### Running the application in development mode
 

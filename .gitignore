@@ -1,6 +1,6 @@
 node_modules
 public/img/cv
-public/downloads
+public/downloads/*
 public/js/bundle.js
 app/config/profile.json
 config/profile.json
