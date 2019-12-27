@@ -22,6 +22,15 @@ export default React.createClass({
     }
     return title.join(' • ');
   },
+  mergeInfo(resume) {
+    return resume.skills.concat([
+      {
+        icon: 'fa-compass',
+        title: 'Location',
+        list: [`Nationality: ${resume.nationalities.join(', ')}`, `Location: ${resume.location}`]
+      }
+    ]);
+  },
   render: function() {
     return (
       <div className="page-resume grid-container grid-parent">
@@ -64,7 +73,7 @@ export default React.createClass({
           </div>
         </div>
         <div className="details grid-35 grid-parent">
-          {Profile.resume.skills.map((skill, key) => {
+          {this.mergeInfo(Profile.resume).map((skill, key) => {
             return (
               <div key={key} className="detail">
                 <div className="lollipop bg-cian">

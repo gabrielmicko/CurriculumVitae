@@ -100,6 +100,8 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
     "callToActionLink": "/education",
     "callToAction": "To see more about me click here >>",
     "callToActionLollipop": "Education",
+    "nationalities": ["EU citizenship", "Spanish"],
+    "location": "Madrid, Spain",
     "professional": [
       {
         "company": "Company Inc.",

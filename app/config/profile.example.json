@@ -91,6 +91,8 @@
     "callToActionLink": "/education",
     "callToAction": "To see more about me click here >>",
     "callToActionLollipop": "Education",
+    "nationalities": ["EU citizenship", "Spanish"],
+    "location": "Madrid, Spain",
     "professional": [
       {
         "company": "Company Inc.",
