@@ -1,6 +1,6 @@
 import React from 'react';
 import Profile from '../config/profile.json';
-import { getSocialIcon } from './utils';
+import { getSocialIcon, getLink } from './utils';
 
 export default React.createClass({
   render() {
@@ -37,7 +37,7 @@ export default React.createClass({
                 {Profile.contact.socialLinks.map(({ url, title }, key) => {
                   return (
                     <li key={key}>
-                      <a href={url}>
+                      <a href={getLink(title, url)}>
                         <i className={`fa fa-${getSocialIcon(title)}`}></i>
                       </a>
                     </li>

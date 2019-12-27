@@ -91,25 +91,27 @@ const renderImportantThings = cv =>
 
 const renderSocialLinks = cv =>
   cv.socialLinks
-    .map(
-      link => `
+    .map(link => {
+      const l = link.title.toLowerCase() === 'skype' ? `skype:${link.url}?call` : link.url;
+      return `
 	<li>
-		${link.title}: <a href="${link.url}" target="_blank">${link.url}</a>
+		${link.title}: <a href="${l}" target="_blank">${link.url}</a>
 	</li>
-`
-    )
+`;
+    })
     .join('');
 
 const renderSkills = cv =>
   cv.resume.skills
-    .map(
-      skill => `
-	<h2>${skill.title}</h2>
-	<ul>
-		${renderList(skill.list)}
-	</ul>
-`
-    )
+    .map(skill => {
+      let str = `<h2>${skill.title}</h2>`;
+      if (skill.merge) {
+        str += `<p>${skill.list.join(', ')}</p>`;
+      } else {
+        str += `<ul>${renderList(skill.list)}</ul>`;
+      }
+      return str;
+    })
     .join('');
 
 module.exports = cv => `
