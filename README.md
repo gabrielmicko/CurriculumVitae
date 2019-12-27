@@ -225,7 +225,7 @@ npm run pdf
 
 ### PDF generation
 
-PDF generation uses customized `andor-cv`. (Check out andor-cv here)[https://github.com/andormade/andor-cv]
+PDF generation uses customized [andor-cv](https://github.com/andormade/andor-cv "Check out andor-cv here").
 
 ### Running the application in development mode
 
