@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router';
 import Profile from '../config/profile.json';
 
@@ -14,6 +14,20 @@ export default React.createClass({
 
     if (prof.location) {
       title.push(`${prof.location}`);
+    }
+    return title.join(' • ');
+  },
+  getLecturesDetails(prof) {
+    let title = [];
+    if (prof.date) {
+      title.push(prof.date);
+    }
+    if (prof.location) {
+      title.push(prof.location);
+    }
+
+    if (prof.name) {
+      title.push(`${prof.name}`);
     }
     return title.join(' • ');
   },
@@ -60,6 +74,43 @@ export default React.createClass({
             })}
           </div>
         </div>
+        {Profile.education.lectures.list.length > 0 && (
+          <div>
+            <div className="grid-100 grid-parent">
+              <h1 className="title">{Profile.education.lectures.title}</h1>
+            </div>
+            <div className="grid-100 exp grid-parent">
+              <div className="grid-parent grid-container">
+                {Profile.education.lectures.list.map((prof, key) => {
+                  return (
+                    <div key={key} className="exp-holder grid-100 grid-parent">
+                      <article>
+                        <div className="job-description">
+                          {prof.logo && (
+                            <div>
+                              <img className="company-logo" src={prof.logo} />
+                            </div>
+                          )}
+                          <div>
+                            <h3>{prof.title}</h3>
+                            <time>{this.getLecturesDetails(prof)}</time>
+                          </div>
+                        </div>
+                        <p
+                          dangerouslySetInnerHTML={(function() {
+                            return {
+                              __html: prof.summary
+                            };
+                          })()}
+                        ></p>
+                      </article>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        )}
         <div className="clearfix"></div>
         <div className="grid-100 grid-parent">
           <div className="cta grid-container grid-parent">

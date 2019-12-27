@@ -177,7 +177,20 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
         "paragraphs": ["Text comes here"],
         "location": "Budapest, Hungary"
       }
-    ]
+    ],
+    "lectures": {
+      "title": "Talks",
+      "list": [
+        {
+          "name": "Name of the event",
+          "location": "London, UK",
+          "logo": "/img/all/talk.png",
+          "date": "2018",
+          "title": "Your talk title",
+          "summary": "Talk was about composing json files."
+        }
+      ]
+    }
   }
 }
 ```

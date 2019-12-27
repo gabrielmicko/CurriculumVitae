@@ -246,7 +246,6 @@ input {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 31px;
 }
 
 .page-resume .job-description img {
@@ -272,8 +271,12 @@ input {
 }
 
 .page-resume .exp-holder {
-  padding: 35px 0;
+  padding: 30px 0;
   border-bottom: 1px solid #8b8b8b;
+}
+
+.page-resume .exp-holder:first-child {
+  padding: 0 0 30px 0;
 }
 
 .page-resume .exp-holder:last-child {
@@ -305,9 +308,14 @@ input {
   font-size: 13px;
   margin: 13px 0 24px 0;
 }
+
+.page-resume .exp-holder article p:last-child {
+  margin: 13px 0 0 0;
+}
+
 .page-resume .details {
   box-sizing: border-box;
-  padding-left: 60px;
+  padding: 0 0 30px 60px;
 }
 .page-resume .details .lollipop {
   width: 45px;
@@ -377,7 +385,6 @@ input {
 
 .page-projects .cta,
 .page-resume .cta {
-  margin-top: 20px;
   padding: 20px 0;
 }
 .page-projects .cta .lollipop,
@@ -524,7 +531,7 @@ input {
     margin: 10px 0;
   }
   .page-resume .details {
-    padding: 0;
+    padding: 30px 0;
   }
   .page-resume .details .detail + .detail {
     margin-top: 20px;
