@@ -128,16 +128,19 @@ Copy "/config/profile.example.json" to "/config/profile.json" and start editing.
       {
         "title": "I am",
         "icon": "fa-male",
+        "merge": true,
         "list": ["communicative", "dedicated"]
       },
       {
         "title": "I code",
         "icon": "fa-code",
+        "merge": true,
         "list": ["JavaScript", "HTML"]
       },
       {
         "title": "I love",
         "icon": "fa-heart",
+        "merge": true,
         "list": ["challenges", "learning", "teaching"]
       }
     ]
